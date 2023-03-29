@@ -1,0 +1,75 @@
+body{
+  background-image: url(/src/gallery/fondo.png);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.container h6{
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
+  color: whitesmoke;
+}
+
+.calculadora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.pantalla{
+  display:flex;
+  justify-content: center;
+  background-color: #000300;
+  width: 100%;
+}
+
+.pantalla input{
+  width: 150px;
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  background: transparent;
+  font-size: 34px;
+  text-align: right;
+  cursor: pointer;
+  color: #736CED;
+}
+
+.pantalla input::placeholder{
+  color: #000300;
+}
+
+.teclas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0%;
+}
+
+.teclas-num{
+  width: 100%;
+  padding: 20px 50px;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.teclas-num button{
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #9F9FED;
+  color: #FEF9FF;
+  font-size: 20px;
+  cursor: pointer;
+}
