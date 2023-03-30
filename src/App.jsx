@@ -3,20 +3,23 @@ import React, { useState } from "react"
 
 function App() {
 
-  const [operacion,setOperacion] = useState('')
+  const [operacion, setOperacion] = useState('')
   const buttons = ["AC","DEL","%","/",7,8,9,"*",4,5,6,"-",1,2,3,"+",0,'00',",","="]
 
+  // funcion para calcular la operacion
   const calcularResultado = () => {
     if (operacion) {
-      evaluate(operacion);
+      (console.log(evaluate(operacion))); 
     } else {
-      alert("Por favor ingrese valores para realizar los cálculos.");
+      console.log("Por favor ingrese valores para realizar los cálculos.");
     }
   };
 
+  //funcion para obtener los datos y pasarlo a string para que se muestre en la pantalla
   function handleButtons(e) {
-     setOperacion(`${e.target.value}`)
+     setOperacion(`${operacion}${e.target.value}`)
   }
+
 
   console.log(operacion)
 
