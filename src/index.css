@@ -27,8 +27,8 @@ body{
 .pantalla{
   display:flex;
   justify-content: center;
-  background-color: #000300;
-  width: 100%;
+  background-color: #9CEAEF;
+  width: 60%;
 }
 
 .pantalla input{
@@ -40,7 +40,7 @@ body{
   font-size: 34px;
   text-align: right;
   cursor: pointer;
-  color: #736CED;
+  color: #1B2845;
 }
 
 .pantalla input::placeholder{
