@@ -39,16 +39,24 @@ function App() {
           </div>
           <div className='teclas bug'>
                 <div className='teclas-num bug'>
-                    {buttons.map((e,i) => {
-                       if (e === "=") {
+                    {buttons.map((e,i) => (
+                      
+                      e === "="
+                      ?  <button value={e} key={i} onClick={calcularResultado}>{e}</button>
+                      : e === "DEL" || e === "AC"
+                      ?  <button key={i} onClick={borrarResultado}> {e} </button>
+                      :  <button value={e} key={i} onClick={handleButtons}>{e}</button>
+                    ))}
+                       
+                       {/*  if (e === "=") {
                         return <button value={e} key={i} onClick={calcularResultado}>{e}</button>
                       } else {
                         return <button value={e} key={i} onClick={handleButtons}>{e}</button>
-                      } 
-                    })}     
-                    <div>
+                      }   */}
+                       
+                     {/* <div>
                       <button onClick={borrarResultado}> borrar </button>
-                    </div>
+                    </div>  */}
                 </div>
           </div>
       </div>    
